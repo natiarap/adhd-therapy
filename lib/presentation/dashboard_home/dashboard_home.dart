@@ -61,7 +61,7 @@ class _DashboardHomeState extends State<DashboardHome> {
 
   final List<Map<String, dynamic>> _achievements = [
     {
-      "title": "Fokus Banget Master",
+      "title": "Fokus Master",
       "description": "Menyelesaikan 10 sesi fokus berturut-turut",
       "icon": "psychology",
       "category": "focus",
