@@ -136,7 +136,7 @@ class _DashboardHomeState extends State<DashboardHome> {
                     AchievementBadgesWidget(
                       achievements: _achievements,
                     ),
-                    SizedBox(height: 10.h), // Bottom padding for FAB
+                    SizedBox(height: 4.h), // Bottom padding for FAB
                   ],
                 ),
               ),
@@ -241,7 +241,7 @@ class _DashboardHomeState extends State<DashboardHome> {
             children: [
               Container(
                 width: 12.w,
-                height: 0.5.h,
+                height: 0.6.h,
                 decoration: BoxDecoration(
                   color: colorScheme.onSurface.withValues(alpha: 0.3),
                   borderRadius: BorderRadius.circular(2),

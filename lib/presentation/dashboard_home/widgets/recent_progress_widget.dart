@@ -62,7 +62,7 @@ class RecentProgressWidget extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 3.h),
+          SizedBox(height: 1.h),
           Container(
             width: double.infinity,
             padding: EdgeInsets.all(3.w),
@@ -93,7 +93,7 @@ class RecentProgressWidget extends StatelessWidget {
                     color: colorScheme.primary,
                   ),
                 ),
-                SizedBox(height: 2.h),
+                SizedBox(height: 1.h),
                 LinearProgressIndicator(
                   value: weeklyCompletion,
                   backgroundColor: colorScheme.primary.withValues(alpha: 0.2),
@@ -104,7 +104,7 @@ class RecentProgressWidget extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 3.h),
+          SizedBox(height: 2.h),
           Column(
             children: progressData
                 .map((data) => _buildProgressItem(
@@ -147,7 +147,7 @@ class RecentProgressWidget extends StatelessWidget {
               size: 20,
             ),
           ),
-          SizedBox(width: 3.w),
+          SizedBox(width: 2.w),
           Expanded(
             child: Text(
               title,

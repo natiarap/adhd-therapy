@@ -38,7 +38,7 @@ class QuickActionsWidget extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 2.h),
+          SizedBox(height: 1.h),
           Row(
             children: [
               Expanded(
@@ -126,7 +126,7 @@ class QuickActionsWidget extends StatelessWidget {
                 size: 28,
               ),
             ),
-            SizedBox(height: 2.h),
+            SizedBox(height: 1.h),
             Text(
               title,
               style: theme.textTheme.bodySmall?.copyWith(

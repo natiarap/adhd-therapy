@@ -102,7 +102,7 @@ class MedicationReminderCardWidget extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 3.h),
+          SizedBox(height: 1.h),
           Container(
             width: double.infinity,
             padding: EdgeInsets.all(3.w),
@@ -133,7 +133,7 @@ class MedicationReminderCardWidget extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 3.h),
+          SizedBox(height: 1.h),
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(

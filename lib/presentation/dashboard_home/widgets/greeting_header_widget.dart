@@ -43,7 +43,7 @@ class GreetingHeaderWidget extends StatelessWidget {
                     color: colorScheme.onSurface.withValues(alpha: 0.7),
                   ),
                 ),
-                SizedBox(height: 0.5.h),
+                SizedBox(height: 0.1.h),
                 Text(
                   userName,
                   style: theme.textTheme.headlineSmall?.copyWith(

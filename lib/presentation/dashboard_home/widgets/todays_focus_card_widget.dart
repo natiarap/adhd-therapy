@@ -44,7 +44,7 @@ class TodaysFocusCardWidget extends StatelessWidget {
                 color: colorScheme.primary,
                 size: 24,
               ),
-              SizedBox(width: 3.w),
+              SizedBox(width: 1.w),
               Expanded(
                 child: Text(
                   'Fokus Hari Ini',
@@ -56,7 +56,7 @@ class TodaysFocusCardWidget extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 3.h),
+          SizedBox(height: 1.h),
           Row(
             children: [
               Expanded(
@@ -88,45 +88,9 @@ class TodaysFocusCardWidget extends StatelessWidget {
                   ],
                 ),
               ),
-              Expanded(
-                flex: 1,
-                child: Center(
-                  child: SizedBox(
-                    width: 20.w,
-                    height: 20.w,
-                    child: Stack(
-                      children: [
-                        CircularProgressIndicator(
-                          value: 1.0,
-                          strokeWidth: 8,
-                          backgroundColor:
-                              colorScheme.primary.withValues(alpha: 0.1),
-                          valueColor: AlwaysStoppedAnimation<Color>(
-                            colorScheme.primary.withValues(alpha: 0.2),
-                          ),
-                        ),
-                        CircularProgressIndicator(
-                          value: attentionLevel,
-                          strokeWidth: 8,
-                          backgroundColor: Colors.transparent,
-                          valueColor: AlwaysStoppedAnimation<Color>(
-                              colorScheme.primary),
-                        ),
-                        Center(
-                          child: CustomIconWidget(
-                            iconName: 'visibility',
-                            color: colorScheme.primary,
-                            size: 24,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
             ],
           ),
-          SizedBox(height: 3.h),
+          SizedBox(height: 1.h),
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
@@ -152,7 +116,7 @@ class TodaysFocusCardWidget extends StatelessWidget {
                     color: colorScheme.primary,
                     size: 20,
                   ),
-                  SizedBox(width: 2.w),
+                  SizedBox(width: 1.w),
                   Text(
                     'Cek Suasana Hati',
                     style: theme.textTheme.bodyMedium?.copyWith(

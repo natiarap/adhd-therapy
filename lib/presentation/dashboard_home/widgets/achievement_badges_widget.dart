@@ -94,9 +94,9 @@ class _AchievementBadgesWidgetState extends State<AchievementBadgesWidget>
               ],
             ),
           ),
-          SizedBox(height: 2.h),
+          SizedBox(height: 1.h),
           SizedBox(
-            height: 25.h,
+            height: 30.h,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               padding: EdgeInsets.symmetric(horizontal: 2.w),
@@ -136,7 +136,7 @@ class _AchievementBadgesWidgetState extends State<AchievementBadgesWidget>
           end: Alignment.bottomRight,
           colors: isNewAchievement
               ? [
-                  AppTheme.accentLight.withValues(alpha: 0.2),
+                  AppTheme.accentLight.withValues(alpha: 0.1),
                   AppTheme.accentLight.withValues(alpha: 0.1),
                 ]
               : [
@@ -144,7 +144,7 @@ class _AchievementBadgesWidgetState extends State<AchievementBadgesWidget>
                   colorScheme.surface.withValues(alpha: 0.8),
                 ],
         ),
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(20),
         border: Border.all(
           color: isNewAchievement
               ? AppTheme.accentLight.withValues(alpha: 0.3)
@@ -166,7 +166,7 @@ class _AchievementBadgesWidgetState extends State<AchievementBadgesWidget>
         children: [
           if (isNewAchievement) ...[
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 2.w, vertical: 0.5.h),
+              padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 1.h),
               decoration: BoxDecoration(
                 color: AppTheme.accentLight,
                 borderRadius: BorderRadius.circular(12),
@@ -176,26 +176,26 @@ class _AchievementBadgesWidgetState extends State<AchievementBadgesWidget>
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.w700,
-                  fontSize: 10.sp,
+                  fontSize: 11.sp,
                 ),
               ),
             ),
-            SizedBox(height: 2.h),
+            SizedBox(height: 1.h),
           ],
           Container(
             padding: EdgeInsets.all(4.w),
             decoration: BoxDecoration(
               color: _getBadgeColor(achievement['category'] as String)
-                  .withValues(alpha: 0.2),
+                  .withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(20),
             ),
             child: CustomIconWidget(
               iconName: achievement['icon'] as String,
               color: _getBadgeColor(achievement['category'] as String),
-              size: 32,
+              size: 28,
             ),
           ),
-          SizedBox(height: 2.h),
+          SizedBox(height: 1.h),
           Text(
             achievement['title'] as String,
             style: theme.textTheme.titleSmall?.copyWith(
@@ -216,7 +216,7 @@ class _AchievementBadgesWidgetState extends State<AchievementBadgesWidget>
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
           ),
-          SizedBox(height: 2.h),
+          SizedBox(height: 1.h),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 1.h),
             decoration: BoxDecoration(
@@ -229,7 +229,7 @@ class _AchievementBadgesWidgetState extends State<AchievementBadgesWidget>
               style: theme.textTheme.bodySmall?.copyWith(
                 color: _getBadgeColor(achievement['category'] as String),
                 fontWeight: FontWeight.w500,
-                fontSize: 10.sp,
+                fontSize: 11.sp,
               ),
             ),
           ),

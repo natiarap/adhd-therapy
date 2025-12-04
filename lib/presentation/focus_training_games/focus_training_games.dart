@@ -430,7 +430,7 @@ class _FocusTrainingGamesState extends State<FocusTrainingGames>
             ),
           ),
         ),
-      ),
+      ),    
     );
   }
 
