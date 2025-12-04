@@ -457,7 +457,7 @@ class _FocusTrainingGamesState extends State<FocusTrainingGames>
           Text(
             label,
             style: TextStyle(
-              fontSize: 10.sp,
+              fontSize: 13.sp,
               fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
               color: isSelected
                   ? AppTheme.lightTheme.colorScheme.primary

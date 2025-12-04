@@ -183,7 +183,7 @@ class _AchievementBadgesWidgetState extends State<AchievementBadgesWidget>
             SizedBox(height: 1.h),
           ],
           Container(
-            padding: EdgeInsets.all(4.w),
+            padding: EdgeInsets.all(6.w),
             decoration: BoxDecoration(
               color: _getBadgeColor(achievement['category'] as String)
                   .withValues(alpha: 0.1),
