@@ -205,9 +205,9 @@ class _MoodAndProgressAnalyticsState extends State<MoodAndProgressAnalytics>
               ),
             ],
           ),
-          SizedBox(height: 3.h),
+          SizedBox(height: 1.h),
           _buildTabBar(context),
-          SizedBox(height: 2.h),
+          SizedBox(height: 1.h),
           TimePeriodSelector(
             selectedPeriod: _selectedPeriod,
             onPeriodChanged: (period) {
@@ -233,46 +233,7 @@ class _MoodAndProgressAnalyticsState extends State<MoodAndProgressAnalytics>
           color: colorScheme.outline.withValues(alpha: 0.2),
         ),
       ),
-      child: TabBar(
-        controller: _tabController,
-        isScrollable: false,
-        indicatorColor: Colors.transparent,
-        dividerColor: Colors.transparent,
-        labelPadding: EdgeInsets.zero,
-        tabs: [
-          _buildTab('Beranda', 0),
-          _buildTab('Latihan', 1),
-          _buildTab('Analitik', 2),
-          _buildTab('Profil', 3),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildTab(String title, int index) {
-    final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
-    final isSelected = _tabController.index == index;
-
-    return Tab(
-      child: Container(
-        width: double.infinity,
-        padding: EdgeInsets.symmetric(vertical: 2.h),
-        decoration: BoxDecoration(
-          color: isSelected ? colorScheme.primary : Colors.transparent,
-          borderRadius: BorderRadius.circular(8),
-        ),
-        child: Text(
-          title,
-          textAlign: TextAlign.center,
-          style: theme.textTheme.bodyMedium?.copyWith(
-            color: isSelected
-                ? colorScheme.onPrimary
-                : colorScheme.onSurface.withValues(alpha: 0.7),
-            fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
-          ),
-        ),
-      ),
+      
     );
   }
 
