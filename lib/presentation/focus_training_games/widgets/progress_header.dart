@@ -89,7 +89,7 @@ class ProgressHeader extends StatelessWidget {
         Text(
           title,
           style: TextStyle(
-            fontSize: 11.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
             color: AppTheme.lightTheme.colorScheme.onSurface
                 .withValues(alpha: 0.7),
@@ -107,7 +107,7 @@ class ProgressHeader extends StatelessWidget {
         Text(
           subtitle,
           style: TextStyle(
-            fontSize: 10.sp,
+            fontSize: 12.sp,
             fontWeight: FontWeight.w400,
             color: AppTheme.lightTheme.colorScheme.onSurface
                 .withValues(alpha: 0.6),
